@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/relativeLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:background="#00695c"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="154dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/main_tv_temp"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:text="温度:" />
+
+            <TextView
+                android:id="@+id/main_tv_humidity"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:text="湿度:" />
+
+            <TextView
+                android:id="@+id/main_tv_light"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:text="光照:" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/main_tv_distance"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:text="距离:" />
+
+            <TextView
+                android:id="@+id/main_tv_flame"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:text="火焰:" />
+
+            <TextView
+                android:id="@+id/main_tv_co"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:text="CO:" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/main_tv_alcohol"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:text="酒精:" />
+
+            <TextView
+                android:id="@+id/main_tv_infrared"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:text="红外:" />
+
+
+            <TextView
+                android:id="@+id/main_tv_smoke"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:text="烟雾:" />
+        </TableRow>
+    </TableLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginBottom="23dp"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="192dp">
+
+        <Button
+            android:id="@+id/main_btn_go"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/main_draw_go" />
+
+
+
+        <Button
+            android:id="@+id/main_btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/main_draw_back" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="60dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/main_draw_sudu1"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="296dp" />
+
+    <TextView
+        android:id="@+id/main_tv_blue_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="34dp"
+        android:background="#00695c"
+        android:text="蓝牙："
+        tools:layout_editor_absoluteX="275dp"
+        tools:layout_editor_absoluteY="296dp" />
+
+    <SeekBar
+        android:id="@+id/main_sb_run"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_below="@+id/main_btn_add"
+        android:layout_centerHorizontal="true"
+        android:max="100"
+        android:progress="20"
+        tools:layout_editor_absoluteX="259dp"
+        tools:layout_editor_absoluteY="257dp" />
+
+    <Button
+        android:id="@+id/main_btn_down"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignStart="@+id/main_btn_add"
+        android:layout_centerVertical="true"
+        android:background="@drawable/decelerate"
+        tools:layout_editor_absoluteX="528dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <Button
+        android:id="@+id/main_btn_add"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/relativeLayout6"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/accelerate"
+        tools:layout_editor_absoluteX="528dp"
+        tools:layout_editor_absoluteY="289dp" />
+
+
+    <Button
+        android:id="@+id/main_btn_buzzer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignEnd="@+id/relativeLayout7"
+        android:layout_alignTop="@+id/relativeLayout6"
+        android:background="@drawable/main_draw_buzzer"
+        tools:layout_editor_absoluteX="392dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <Button
+        android:id="@+id/main_btn_headlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/main_btn_down"
+        android:layout_centerVertical="true"
+        android:text="车灯"
+        tools:layout_editor_absoluteX="528dp"
+        tools:layout_editor_absoluteY="72dp" />
+
+    <Button
+        android:id="@+id/main_btn_steering_gear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/main_btn_down"
+        android:layout_below="@+id/main_btn_buzzer"
+        android:text="舵机"
+        tools:layout_editor_absoluteX="528dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/main_btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="85dp"
+        android:background="#00695c"
+        android:text="重新连接"
+        tools:layout_editor_absoluteX="392dp"
+        tools:layout_editor_absoluteY="220dp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout7"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/relativeLayout5"
+        android:layout_marginEnd="31dp"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="192dp">
+
+        <Button
+            android:id="@+id/main_btn_left"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/main_draw_left" />
+
+        <Button
+            android:id="@+id/main_btn_right"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/main_draw_right" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
